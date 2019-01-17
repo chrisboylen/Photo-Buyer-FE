@@ -19,14 +19,14 @@ Photo Buyer allows users to upload, purchase, and edit photos. It also allows us
 ## Result
 
 ![Photo Buyer layout](static/home-web.png)
-![Photo Buyer Shopping Cart](static/cart-web)
-![Photo Buyer Payment](static/payment-web)
-![Photo Buyer Search](static/search-web)
-![Photo Buyer Sell](static/sell-web)
-![Photo Buyer Sign In](static/signin-web)
-![Photo Buyer Mobile Layout](static/home-mobile)
-![Photo Buyer Mobile Shopping Cart](static/cart-mobile)
-![Photo Buyer Mobile Menu](static/menu-mobile)
+![Photo Buyer Shopping Cart](static/cart-web.png)
+![Photo Buyer Payment](static/payment-web.png)
+![Photo Buyer Search](static/search-web.png)
+![Photo Buyer Sell](static/sell-web.png)
+![Photo Buyer Sign In](static/signin-web.png)
+![Photo Buyer Mobile Layout](static/home-mobile.png)
+![Photo Buyer Mobile Shopping Cart](static/cart-mobile.png)
+![Photo Buyer Mobile Menu](static/menu-mobile.png)
 
 ## Contributor
 

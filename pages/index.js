@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import Items from "../components/Items";
 
-class Home extends Component {
-  render() {
-    return <div>Bingo!</div>;
-  }
-}
+const Home = props => (
+  <div>
+    <Items page={parseFloat(props.query.page) || 1} />
+  </div>
+);
 
 export default Home;

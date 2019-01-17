@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`REMOVE FROM CART renders and matches snapshot 1`] = `
+<button
+  className="RemoveFromCart__BigButton-sc-1tq5xu5-0 WgPXB"
+  disabled={false}
+  onClick={[Function]}
+  title="Delete Item"
+>
+  ×
+</button>
+`;

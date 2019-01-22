@@ -44,9 +44,14 @@ const Nav = () => (
             </>
           )}
           {!me && (
-            <Link href="/signup">
-              <a>Signup</a>
-            </Link>
+            <>
+              <Link href="/signup">
+                <a>Signup</a>
+              </Link>
+              <Link href="/signin">
+                <a>Signin</a>
+              </Link>
+            </>
           )}
         </div>
       </NavStyles>

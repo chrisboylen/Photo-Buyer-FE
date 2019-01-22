@@ -54,6 +54,11 @@ const NavStyles = styled.ul`
       background: ${props => props.theme.blue};
       display: inline-block;
     }
+    /* &:hover,
+    &:hover::before,
+    &:hover::after {
+      background: yellow;
+    } */
     &::before,
     &::after {
       content: "";
@@ -84,11 +89,8 @@ const NavStyles = styled.ul`
     @media (max-width: 760px) {
       display: block;
     }
-    &:hover .mobile-icon::before {
-      top: -1rem;
-    }
-    &:hover .mobile-icon::after {
-      top: 1rem;
+    &:hover {
+      background: yellow;
     }
   }
   .mobile-bkg {

@@ -2,17 +2,17 @@
 
 exports[`NAV renders a minimal nav when signed out 1`] = `
 <ul
-  className="NavStyles-sc-10phz6m-0 cIRtwP"
+  className="NavStyles-sc-10phz6m-0 eatswK"
   data-test="nav"
 >
   <input
-    class="mobile-checkbox"
+    className="mobile-checkbox"
     id="mobile-toggle"
     type="checkbox"
   />
   <label
-    class="mobile-btn"
-    for="mobile-toggle"
+    className="mobile-btn"
+    htmlFor="mobile-toggle"
   >
     <span
       className="mobile-icon"
@@ -46,6 +46,16 @@ exports[`NAV renders a minimal nav when signed out 1`] = `
         onClick={[Function]}
       >
         Signup
+      </a>
+    </Link>
+    <Link
+      href="/signin"
+    >
+      <a
+        href="/signin"
+        onClick={[Function]}
+      >
+        Signin
       </a>
     </Link>
   </div>

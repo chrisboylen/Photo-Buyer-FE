@@ -42,7 +42,7 @@ describe("NAV", () => {
     await wait();
     wrapper.update();
     const nav = wrapper.find('ul[data-test="nav"]');
-    expect(nav.children().length).toBe(6);
+    expect(nav.children().length).toBe(4);
     expect(nav.text()).toContain("Signout");
   });
 });

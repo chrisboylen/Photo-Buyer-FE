@@ -58,7 +58,11 @@
       "\\.(gql|graphql)$": "jest-transform-graphql",
       ".*": "babel-jest",
       "^.+\\.js?$": "babel-jest"
-    }
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}"
+    ]
   },
   "//": "This is our babel config, I prefer this over a .babelrc file",
   "babel": {

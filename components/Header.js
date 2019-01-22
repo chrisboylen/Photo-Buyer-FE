@@ -31,6 +31,11 @@ const Logo = styled.h1`
     color: #4dadfe;
     text-transform: uppercase;
     text-decoration: none;
+    @media (max-width: 760px) {
+      &:hover {
+        background: yellow;
+      }
+    }
   }
   span {
     background: linear-gradient(to right, #00f1fe 0%, #4dadfe 100%);
@@ -41,6 +46,7 @@ const Logo = styled.h1`
   img {
     width: 6rem;
     margin: 0 2rem 0 0;
+    cursor: pointer;
   }
   @media (max-width: 1300px) {
     font-size: 6rem;

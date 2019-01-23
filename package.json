@@ -61,7 +61,8 @@
     },
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "**/*.{js,jsx}"
+      "components/*.{js,jsx}",
+      "!components/styles/*.js"
     ]
   },
   "//": "This is our babel config, I prefer this over a .babelrc file",

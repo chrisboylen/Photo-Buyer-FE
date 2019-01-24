@@ -4,7 +4,7 @@ import { mount } from "enzyme";
 import toJSON from "enzyme-to-json";
 import wait from "waait";
 import { MockedProvider } from "react-apollo/test-utils";
-import { fakeUser, fakeCartItem } from "../lib/testUtils";
+import { fakeUser, fakeCartItem, fakeCartItems } from "../lib/testUtils";
 
 const mocks = [
   {
@@ -14,6 +14,23 @@ const mocks = [
         me: {
           ...fakeUser(),
           cart: [fakeCartItem()]
+        }
+      }
+    }
+  },
+  {
+    request: { query: LOCAL_STATE_QUERY },
+    result: { data: { cartOpen: true } }
+  }
+];
+const mocks2 = [
+  {
+    request: { query: CURRENT_USER_QUERY },
+    result: {
+      data: {
+        me: {
+          ...fakeUser(),
+          cart: [fakeCartItems()]
         }
       }
     }
@@ -34,10 +51,17 @@ describe("CART", () => {
       </MockedProvider>
     );
   });
-  it("renders and matches snapshot", async () => {
+
+  it("renders and matches snapshot with cart item", async () => {
     await wait();
     wrapper.update();
     expect(toJSON(wrapper.find("header"))).toMatchSnapshot();
     expect(wrapper.find("CartItem")).toHaveLength(1);
+  });
+
+  it("renders and matches snapshot with cart items", async () => {
+    await wait();
+    wrapper.update();
+    expect(toJSON(wrapper.find("header"))).toMatchSnapshot();
   });
 });

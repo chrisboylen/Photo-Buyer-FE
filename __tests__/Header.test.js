@@ -1,8 +1,11 @@
 import { mount } from "enzyme";
 import toJSON from "enzyme-to-json";
+import wait from "waait";
 import { MockedProvider } from "react-apollo/test-utils";
 import { CURRENT_USER_QUERY } from "../components/User";
 import Header from "../components/Header";
+import NProgress from "nprogress";
+// import Router from "next/router";
 
 const mocks = [
   {
@@ -12,13 +15,16 @@ const mocks = [
 ];
 
 describe("HEADER", () => {
-  it("renders and matches snapshot", () => {
-    const wrapper = mount(
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = mount(
       <MockedProvider mocks={mocks}>
         <Header />
       </MockedProvider>
     );
-
+  });
+  it("renders and matches snapshot", () => {
     expect(toJSON(wrapper.find("header"))).toMatchSnapshot();
   });
 });

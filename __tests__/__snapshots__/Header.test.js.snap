@@ -19756,10 +19756,6 @@ exports[`HEADER renders and matches snapshot 1`] = `
                                 "reject": [Function],
                                 "resolve": [Function],
                               },
-                              "5" => Object {
-                                "reject": [Function],
-                                "resolve": [Function],
-                              },
                               "6" => Object {
                                 "reject": [Function],
                                 "resolve": [Function],
@@ -20344,6 +20340,11 @@ exports[`HEADER renders and matches snapshot 1`] = `
                                   "_subscriber": [Function],
                                   "isCurrentlyPolling": false,
                                   "isTornDown": false,
+                                  "lastError": [Error: Network error: No more mocked responses for the query: {
+  cartOpen @client
+}
+, variables: {}],
+                                  "lastResult": undefined,
                                   "observers": Array [
                                     SubscriptionObserver {
                                       "_subscription": Subscription {
@@ -21498,8 +21499,11 @@ exports[`HEADER renders and matches snapshot 1`] = `
                                       "displayName": "Query",
                                     },
                                   },
-                                  "networkError": null,
-                                  "networkStatus": 1,
+                                  "networkError": [Error: No more mocked responses for the query: {
+  cartOpen @client
+}
+, variables: {}],
+                                  "networkStatus": 8,
                                   "previousVariables": null,
                                   "variables": Object {},
                                 },
@@ -50281,10 +50285,6 @@ exports[`HEADER renders and matches snapshot 1`] = `
                                     "reject": [Function],
                                     "resolve": [Function],
                                   },
-                                  "5" => Object {
-                                    "reject": [Function],
-                                    "resolve": [Function],
-                                  },
                                   "6" => Object {
                                     "reject": [Function],
                                     "resolve": [Function],
@@ -50869,6 +50869,11 @@ exports[`HEADER renders and matches snapshot 1`] = `
                                       "_subscriber": [Function],
                                       "isCurrentlyPolling": false,
                                       "isTornDown": false,
+                                      "lastError": [Error: Network error: No more mocked responses for the query: {
+  cartOpen @client
+}
+, variables: {}],
+                                      "lastResult": undefined,
                                       "observers": Array [
                                         SubscriptionObserver {
                                           "_subscription": Subscription {
@@ -52023,8 +52028,11 @@ exports[`HEADER renders and matches snapshot 1`] = `
                                           "displayName": "Query",
                                         },
                                       },
-                                      "networkError": null,
-                                      "networkStatus": 1,
+                                      "networkError": [Error: No more mocked responses for the query: {
+  cartOpen @client
+}
+, variables: {}],
+                                      "networkStatus": 8,
                                       "previousVariables": null,
                                       "variables": Object {},
                                     },

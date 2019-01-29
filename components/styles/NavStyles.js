@@ -8,40 +8,11 @@ const NavStyles = styled.ul`
   .web-nav {
     display: flex;
     @media (max-width: 760px) {
-      align-items: center;
-      flex-direction: column;
-      font-size: 3rem;
-      opacity: 0;
-      position: absolute;
-      top: 200%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      transition: all 0.8s ease-in-out;
-      list-style: none;
-      width: 100%;
-      z-index: 1500;
+      display: none;
     }
   }
   .mobile-checkbox {
     display: none;
-    &:checked ~ .mobile-bkg {
-      transform: scale(100);
-    }
-    &:checked ~ .web-nav {
-      opacity: 1;
-      width: 100%;
-    }
-    &:checked + .mobile-btn .mobile-icon {
-      background: transparent;
-    }
-    &:checked + .mobile-btn .mobile-icon::before {
-      top: 0;
-      transform: rotate(135deg);
-    }
-    &:checked + .mobile-btn .mobile-icon::after {
-      top: 0;
-      transform: rotate(-135deg);
-    }
   }
   .mobile-icon {
     position: relative;
@@ -54,11 +25,6 @@ const NavStyles = styled.ul`
       background: ${props => props.theme.blue};
       display: inline-block;
     }
-    /* &:hover,
-    &:hover::before,
-    &:hover::after {
-      background: yellow;
-    } */
     &::before,
     &::after {
       content: "";
@@ -71,6 +37,17 @@ const NavStyles = styled.ul`
     }
     &::after {
       top: 1rem;
+    }
+  }
+  .mobile-icon-open {
+    background: transparent;
+    &::before {
+      top: 0;
+      transform: rotate(135deg);
+    }
+    &::after {
+      top: 0;
+      transform: rotate(-135deg);
     }
   }
   .mobile-btn {
@@ -150,6 +127,25 @@ const NavStyles = styled.ul`
     width: 100%;
     font-size: 1.5rem;
   }
+  @media (max-width: 760px) {
+    font-size: 3rem;
+    padding: 0;
+  }
 `;
 
-export default NavStyles;
+const MobileStyles = styled.ul`
+  align-items: center;
+  background-image: radial-gradient(
+    ${props => props.theme.lightblue},
+    ${props => props.theme.blue}
+  );
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+  z-index: 1500;
+`;
+
+export { NavStyles, MobileStyles };

@@ -2,13 +2,13 @@
 
 exports[`NAV renders a minimal nav when signed out 1`] = `
 <ul
-  className="NavStyles-sc-10phz6m-0 eatswK"
+  className="NavStyles-sc-10phz6m-0 iOcXya"
   data-test="nav"
 >
-  <input
+  <button
     className="mobile-checkbox"
     id="mobile-toggle"
-    type="checkbox"
+    onClick={[Function]}
   />
   <label
     className="mobile-btn"

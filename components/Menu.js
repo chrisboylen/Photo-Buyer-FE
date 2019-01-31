@@ -13,9 +13,11 @@ class Menu extends Component {
     return (
       <User>
         {({ data: { me } }) => (
-          <MobileStyles data-test="nav">
+          <MobileStyles data-test="mobile">
             <Link href="/items">
-              <a onClick={this.props.toggleMenu}>Shop</a>
+              <a data-test="items" onClick={this.props.toggleMenu}>
+                Shop
+              </a>
             </Link>
             {me && (
               <>
@@ -28,7 +30,7 @@ class Menu extends Component {
                 <Signout />
                 <Mutation mutation={TOGGLE_CART_MUTATION}>
                   {toggleCart => (
-                    <button onClick={toggleCart}>
+                    <button onClick={toggleCart} data-test="signout">
                       My Cart
                       <CartCount
                         count={me.cart.reduce(

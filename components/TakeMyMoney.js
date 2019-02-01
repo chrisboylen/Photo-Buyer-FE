@@ -30,7 +30,6 @@ function totalItems(cart) {
 class TakeMyMoney extends React.Component {
   onToken = async (res, createOrder) => {
     NProgress.start();
-    console.log(res.id);
     //manually call the mutation once we have the strip token
     const order = await createOrder({
       variables: { token: res.id }
